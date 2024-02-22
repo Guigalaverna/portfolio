@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Jost as FontSans, Crimson_Text as FontSerif } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const fontSans = FontSans({ subsets: ["latin"], variable: "--font-sans" });
+const fontSerif = FontSerif({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-serif",
+});
 
 export const metadata: Metadata = {
   title: "Guilherme Galaverna",
@@ -16,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`font-sans ${fontSans.variable}`}>{children}</body>
     </html>
   );
 }
