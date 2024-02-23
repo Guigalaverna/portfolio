@@ -18,6 +18,22 @@ const config: Config = {
         sans: ["var(--font-sans)", "sans-serif"],
         serif: ["var(--font-serif)", "serif"],
       },
+
+      keyframes: {
+        "increase-width": {
+          "0%": {
+            width: "0px",
+          },
+
+          "100%": {
+            width: "full",
+          },
+        },
+      },
+
+      animation: {
+        "increase-width": "increase-width 0.2s ease-in-out",
+      },
     },
   },
   plugins: [],

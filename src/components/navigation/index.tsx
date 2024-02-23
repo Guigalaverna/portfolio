@@ -34,26 +34,12 @@ export function Navigation() {
         </section>
       )}
 
-      <nav className="hidden xl:flex text-slate-600">
-        <ul className="text-2xl space-y-5">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About me</a>
-          </li>
-          <li>
-            <a href="#">Projects</a>
-          </li>
-          <li>
-            <a href="#">Resume</a>
-          </li>
-        </ul>
-      </nav>
+      <Links className="hidden xl:flex text-slate-600" />
 
-      <button className="hidden xl:block text-xl text-slate-600">
+      <button className="hidden text-xl text-slate-600">
         Close navigation
       </button>
+      <span></span>
     </header>
   );
 }

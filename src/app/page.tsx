@@ -6,7 +6,10 @@ export default function Home() {
       <Navigation />
 
       <section className="px-12 xl:px-0 xl:w-full overflow-y-auto scrollbar-hide space-y-[25vh] 2xl:max-w-[1800px] 2xl:mx-auto">
-        <section className="lg:flex 2xl:h-full lg:items-center xl:justify-around lg:flex-row">
+        <section
+          id="#home"
+          className="lg:flex 2xl:h-full lg:items-center xl:justify-around lg:flex-row"
+        >
           <div className="mt-12 lg:flex lg:flex-col lg:gap-5">
             <span className="text-xl lg:text-3xl font-serif text-gray-500">
               frontend developer
@@ -28,7 +31,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="xl:flex lg:items-center xl:justify-around lg:flex-row">
+        <section
+          id="#about-me"
+          className="xl:flex lg:items-center xl:justify-around lg:flex-row"
+        >
           <div className="mt-12 lg:flex lg:flex-col lg:gap-5">
             <span className="text-xl lg:text-3xl font-serif text-gray-500">
               who am i?
@@ -58,7 +64,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="xl:flex xl:items-center xl:justify-around xl:flex-row">
+        <section
+          id="#projects"
+          className="xl:flex xl:items-center xl:justify-around xl:flex-row"
+        >
           <div className="mt-12 lg:flex lg:flex-col lg:gap-5">
             <span className="text-xl lg:text-3xl font-serif text-gray-500">
               awesome things that I've made 🌟
@@ -74,9 +83,9 @@ export default function Home() {
             </span>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 p-5">
-            {Array.from({ length: 5 }).map((_, i) => (
-              <div className="flex flex-col p-3 border-zinc-300 border-[1px] group hover:scale-105 transition-transform transition-colors hover:bg-slate-800 focus:bg-slate-800">
+          <div className="grid grid-cols-1 md:grid-cols-2  gap-5 p-5">
+            {Array.from({ length: 6 }).map((_, i) => (
+              <div className="flex flex-col p-3 border-zinc-300 border-[1px] group hover:scale-105 transition-all hover:bg-slate-800 focus:bg-slate-800">
                 <img src="https://placehold.co/200x100" alt="" />
 
                 <h3 className="mt-3 text-xl group-hover:text-white text-slate-600 after:pl-2 after:content-['↗']">
