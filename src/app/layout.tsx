@@ -21,7 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans ${fontSans.variable} ${fontSerif.variable}`}>
+      <body
+        className={`font-sans ${fontSans.variable} ${fontSerif.variable} selection:bg-slate-600`}
+      >
         {children}
       </body>
     </html>

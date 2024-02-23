@@ -11,9 +11,9 @@ export function Navigation() {
   }
 
   return (
-    <header className="p-12 flex items-center justify-between md:flex-col md:items-start md:h-screen md:w-[15vw]">
+    <header className="p-12 flex items-center justify-between xl:flex-col xl:items-start xl:h-screen xl:w-[15vw]">
       <button
-        className="bg-transparent text-[0px] outline-none md:hidden"
+        className="bg-transparent text-[0px] outline-none xl:hidden"
         onClick={handleToggleNavigator}
       >
         <Menu size={20} className="text-slate-600" />
@@ -34,7 +34,7 @@ export function Navigation() {
         </section>
       )}
 
-      <nav className="hidden md:flex text-slate-600">
+      <nav className="hidden xl:flex text-slate-600">
         <ul className="text-2xl space-y-5">
           <li>
             <a href="#">Home</a>
@@ -51,7 +51,7 @@ export function Navigation() {
         </ul>
       </nav>
 
-      <button className="hidden md:block text-xl text-slate-600">
+      <button className="hidden xl:block text-xl text-slate-600">
         Close navigation
       </button>
     </header>
