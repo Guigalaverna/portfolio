@@ -32,6 +32,14 @@ export function Links(props: LinksProps) {
         </li>
         <li>
           <a
+            href="/galery"
+            className="relative after:block after:w-0 after:absolute after:bg-slate-800 after:h-1 hover:after:w-full hover:after:animate-increase-width"
+          >
+            Galery
+          </a>
+        </li>
+        <li>
+          <a
             href="#resume"
             className="relative after:block after:w-0 after:absolute after:bg-slate-800 after:h-1 hover:after:w-full hover:after:animate-increase-width"
           >

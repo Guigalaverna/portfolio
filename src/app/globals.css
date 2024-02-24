@@ -4,7 +4,6 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: mandatory;
 }
 
 /* For Webkit-based browsers (Chrome, Safari and Opera) */
@@ -16,4 +15,24 @@ html {
 .scrollbar-hide {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+@keyframes invert-slideIn {
+  from {
+    transform: translateX(200%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-200%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
 }

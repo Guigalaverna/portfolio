@@ -1,5 +1,8 @@
-import { Navigation } from "@/components/navigation";
 import Image from "next/image";
+import { Navigation } from "@/components/navigation";
+
+import { Onboarding } from "./ui/onboarding";
+import { AboutMe } from "./ui/about-me";
 
 export default function Home() {
   return (
@@ -7,66 +10,9 @@ export default function Home() {
       <Navigation />
 
       <section className="px-12 xl:px-0 xl:w-full overflow-y-auto scrollbar-hide space-y-[25vh] 2xl:max-w-[1800px] 2xl:mx-auto">
-        <section
-          id="#home"
-          className="lg:flex 2xl:h-full lg:items-center xl:justify-around lg:flex-row"
-        >
-          <div className="mt-12 lg:flex lg:flex-col lg:gap-5">
-            <span className="text-xl lg:text-3xl font-serif text-gray-500">
-              frontend developer
-            </span>
-            <h1 className="text-3xl lg:text-5xl font-serif text-slate-600">
-              heyy there, I'm Guilherme
-            </h1>
-            <span className="text-xl lg:text-3xl font-serif text-gray-500">
-              just a body with passion for coding, coffee and origami
-            </span>
-          </div>
+        <Onboarding />
 
-          <div className="columns-2 gap-3 space-y-3 mt-10 lg:mt-0 ">
-            {Array.from({ length: 5 }).map((_, i) => (
-              <div
-                key={i}
-                className="block w-[160px] h-[200px] lg:w-[282px] lg:h-[355px] bg-red-300"
-              >
-                {i}
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section
-          id="#about-me"
-          className="xl:flex lg:items-center xl:justify-around lg:flex-row"
-        >
-          <div className="mt-12 lg:flex lg:flex-col lg:gap-5">
-            <span className="text-xl lg:text-3xl font-serif text-gray-500">
-              who am i?
-            </span>
-            <h1 className="text-3xl lg:text-5xl font-serif text-slate-600">
-              About me
-            </h1>
-            <span className="text-xl lg:text-3xl font-serif text-gray-500">
-              <i>"Heyy, how you doin'?"</i>
-            </span>
-          </div>
-
-          <div className="mt-10 text-lg space-y-3 tracking-tight leading-[1.6] text-slate-600 max-w-3xl">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet
-              dicta debitis repellendus minus perspiciatis possimus omnis in
-              repellat illum, qui delectus, a accusamus dolorum. Dolore suscipit
-              blanditiis accusamus praesentium nobis?
-            </p>
-
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet
-              dicta debitis repellendus minus perspiciatis possimus omnis in
-              repellat illum, qui delectus, a accusamus dolorum. Dolore suscipit
-              blanditiis accusamus praesentium nobis?
-            </p>
-          </div>
-        </section>
+        <AboutMe />
 
         <section
           id="#projects"
@@ -81,8 +27,7 @@ export default function Home() {
             </h1>
             <span className="text-xl lg:text-3xl font-serif text-gray-500">
               <i className="flex items-center gap-3">
-                E = mc²{" "}
-                <span className="text-lg">(e: energy / m: my / c: coffee)</span>
+                E = mc² <span className="text-lg">(energy = my * coffee²)</span>
               </i>
             </span>
           </div>
