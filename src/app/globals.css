@@ -5,34 +5,3 @@
 html {
   scroll-behavior: smooth;
 }
-
-/* For Webkit-based browsers (Chrome, Safari and Opera) */
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-
-/* For IE, Edge and Firefox */
-.scrollbar-hide {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-@keyframes invert-slideIn {
-  from {
-    transform: translateX(200%);
-  }
-
-  to {
-    transform: translateX(0%);
-  }
-}
-
-@keyframes slideIn {
-  from {
-    transform: translateX(-200%);
-  }
-
-  to {
-    transform: translateX(0%);
-  }
-}

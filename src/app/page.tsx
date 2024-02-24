@@ -1,58 +1,7 @@
-import Image from "next/image";
-import { Navigation } from "@/components/navigation";
-
-import { Onboarding } from "./ui/onboarding";
-import { AboutMe } from "./ui/about-me";
-
 export default function Home() {
   return (
-    <main className="w-screen h-screen flex flex-col xl:flex-row">
-      <Navigation />
-
-      <section className="px-12 xl:px-0 xl:w-full overflow-y-auto scrollbar-hide space-y-[25vh] 2xl:max-w-[1800px] 2xl:mx-auto">
-        <Onboarding />
-
-        <AboutMe />
-
-        <section
-          id="#projects"
-          className="xl:flex xl:items-center xl:justify-around xl:flex-row"
-        >
-          <div className="mt-12 lg:flex lg:flex-col lg:gap-5">
-            <span className="text-xl lg:text-3xl font-serif text-gray-500">
-              awesome things that I've made 🌟
-            </span>
-            <h1 className="text-3xl lg:text-5xl font-serif text-slate-600">
-              Projects
-            </h1>
-            <span className="text-xl lg:text-3xl font-serif text-gray-500">
-              <i className="flex items-center gap-3">
-                E = mc² <span className="text-lg">(energy = my * coffee²)</span>
-              </i>
-            </span>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2  gap-5 p-5">
-            {Array.from({ length: 6 }).map((_, i) => (
-              <div
-                key={i}
-                className="flex flex-col p-3 border-zinc-300 border-[1px] group hover:scale-105 transition-all hover:bg-slate-800 focus:bg-slate-800"
-              >
-                <Image
-                  width={200}
-                  height={100}
-                  src="https://repository-images.githubusercontent.com/341426736/c31ecb80-7579-11eb-9550-83da2d390615"
-                  alt=""
-                />
-
-                <h3 className="mt-3 text-xl group-hover:text-white text-slate-600 after:pl-2 after:content-['↗']">
-                  move.it
-                </h3>
-              </div>
-            ))}
-          </div>
-        </section>
-      </section>
+    <main className="">
+      <h1>Hello World</h1>
     </main>
   );
 }
