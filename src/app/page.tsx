@@ -1,4 +1,5 @@
 import { Navigation } from "@/components/navigation";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -24,7 +25,10 @@ export default function Home() {
 
           <div className="columns-2 gap-3 space-y-3 mt-10 lg:mt-0 ">
             {Array.from({ length: 5 }).map((_, i) => (
-              <div className="block w-[160px] h-[200px] lg:w-[282px] lg:h-[355px] bg-red-300">
+              <div
+                key={i}
+                className="block w-[160px] h-[200px] lg:w-[282px] lg:h-[355px] bg-red-300"
+              >
                 {i}
               </div>
             ))}
@@ -85,8 +89,16 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2  gap-5 p-5">
             {Array.from({ length: 6 }).map((_, i) => (
-              <div className="flex flex-col p-3 border-zinc-300 border-[1px] group hover:scale-105 transition-all hover:bg-slate-800 focus:bg-slate-800">
-                <img src="https://placehold.co/200x100" alt="" />
+              <div
+                key={i}
+                className="flex flex-col p-3 border-zinc-300 border-[1px] group hover:scale-105 transition-all hover:bg-slate-800 focus:bg-slate-800"
+              >
+                <Image
+                  width={200}
+                  height={100}
+                  src="https://repository-images.githubusercontent.com/341426736/c31ecb80-7579-11eb-9550-83da2d390615"
+                  alt=""
+                />
 
                 <h3 className="mt-3 text-xl group-hover:text-white text-slate-600 after:pl-2 after:content-['↗']">
                   move.it
