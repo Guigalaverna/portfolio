@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
-import { Jost as FontSans, Crimson_Text as FontSerif } from "next/font/google";
+import {
+  Poppins as FontSans,
+  Crimson_Text as FontSerif,
+} from "next/font/google";
 import "./globals.css";
 
-const fontSans = FontSans({ subsets: ["latin"], variable: "--font-sans" });
+const fontSans = FontSans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500"],
+  variable: "--font-sans",
+});
 const fontSerif = FontSerif({
   subsets: ["latin"],
   weight: ["400"],
@@ -21,9 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`font-sans ${fontSans.variable} ${fontSerif.variable} selection:bg-slate-600`}
-      >
+      <body className={`font-sans ${fontSans.variable} ${fontSerif.variable}`}>
         {children}
       </body>
     </html>
