@@ -3,7 +3,7 @@ import {
   Poppins as FontSans,
   Crimson_Text as FontSerif,
 } from "next/font/google";
-import "../globals.css";
+import "./globals.css";
 
 const fontSans = FontSans({
   subsets: ["latin"],

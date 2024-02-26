@@ -7,7 +7,7 @@ export function Onboarding() {
   return (
     <section
       id="onboarding"
-      className="mt-16  flex flex-col items-center gap-20 md:flex-row md:justify-between md:mt-16"
+      className="mt-16 flex flex-col items-center gap-20 md:flex-row md:justify-between md:mt-16"
     >
       <article className="xl:max-w-5xl">
         <motion.h1

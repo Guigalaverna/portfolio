@@ -19,10 +19,10 @@ export function Header() {
       <nav className="hidden md:block">
         <ul className="flex items-center gap-9 text-sm xl:text-lg font-medium">
           <li>
-            <a href="#onboarding">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="#about-me">About me</a>
+            <a href="/about-me">About me</a>
           </li>
           <li>
             <a href="#projects">Projects</a>

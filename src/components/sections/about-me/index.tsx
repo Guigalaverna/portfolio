@@ -8,7 +8,7 @@ export function AboutMeSection() {
   return (
     <section
       id="about-me"
-      className="about-me flex flex-col items-center mt-16 space-y-28"
+      className="about-me flex flex-col items-center mt-28 space-y-28"
     >
       <h2 className="text-2xl mb-16 font-medium xl:text-4xl">
         {type("about me")}
