@@ -1,8 +1,7 @@
 import { Onboarding } from "./sections/onboarding";
-import { WhoAmI } from "./sections/about-me/whoami";
-import { MyPassions } from "./sections/about-me/my-passions";
-import { Techs } from "./sections/about-me/techs";
+
 import { Header } from "../components/header";
+import { AboutMeSection } from "./sections/about-me";
 
 export default function Home() {
   return (
@@ -11,18 +10,7 @@ export default function Home() {
 
       <Onboarding />
 
-      <section
-        id="about-me"
-        className="about-me flex flex-col items-center mt-16 space-y-28"
-      >
-        <h2 className="text-2xl mb-16 font-medium xl:text-4xl">about me</h2>
-
-        <WhoAmI />
-
-        <MyPassions />
-
-        <Techs />
-      </section>
+      <AboutMeSection />
     </main>
   );
 }

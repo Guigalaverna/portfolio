@@ -1,5 +1,7 @@
 "use client";
 
+import { type } from "@/lib/type";
+
 export function Techs() {
   return (
     <section className="flex w-full flex-col items-center xl:flex-row xl:justify-between">
@@ -11,17 +13,16 @@ export function Techs() {
 
       <article className="xl:max-w-xl">
         <h3 className="my-10 text-xl font-medium xl:text-4xl xl:my-4">
-          my stack
+          {type("my stack")}
         </h3>
         <div className="leading-[1.6] font-light space-y-10 xl:space-y-4">
-          As a frontend developer, I utilize the entire{" "}
-          <strong className="font-medium">React ecosystem</strong>, including
-          Next.js, TailwindCSS, and TypeScript. Additionally, I am proficient in
-          consuming RESTful APIs to integrate dynamic data into my applications.
-          Furthermore, I have familiarity with Next.js Server Components and
-          possess intermediate knowledge of UNIX systems, enabling me to operate
-          in more complex development environments and leverage powerful tools
-          available in these systems.
+          {type(`As a frontend developer, I utilize the entire React ecosystem,
+          including Next.js, TailwindCSS, and TypeScript. Additionally, I am
+          proficient in consuming RESTful APIs to integrate dynamic data into my
+          applications. Furthermore, I have familiarity with Next.js Server
+          Components and possess intermediate knowledge of UNIX systems,
+          enabling me to operate in more complex development environments and
+          leverage powerful tools available in these systems.`)}
         </div>
       </article>
     </section>
