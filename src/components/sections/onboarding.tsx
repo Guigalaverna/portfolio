@@ -2,6 +2,12 @@
 
 import { type } from "@/lib/type";
 import { motion } from "framer-motion";
+import {
+  GithubLogo,
+  InstagramLogo,
+  LinkedinLogo,
+  TwitterLogo,
+} from "phosphor-react";
 
 export function Onboarding() {
   return (
@@ -32,6 +38,34 @@ export function Onboarding() {
             "just a cool boy with love in software engineering, coffee, origami and a nice tv series"
           )}
         </motion.p>
+
+        <div className="mt-5">
+          <ul className="flex items-center gap-3">
+            <li className="bg-slate-200 p-2 rounded-xl text-slate-500">
+              <a target="_blank" href="https://instagram.com/galavernag">
+                <InstagramLogo size={26} />
+              </a>
+            </li>
+            <li className="bg-slate-200 p-2 rounded-xl text-slate-500">
+              <a target="_blank" href="https://github.com/Guigalaverna">
+                <GithubLogo size={26} />
+              </a>
+            </li>
+            <li className="bg-slate-200 p-2 rounded-xl text-slate-500">
+              <a target="_blank" href="https://twitter.com/galavernag">
+                <TwitterLogo size={26} />
+              </a>
+            </li>
+            <li className="bg-slate-200 p-2 rounded-xl text-slate-500">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/galavernag/#"
+              >
+                <LinkedinLogo size={26} />
+              </a>
+            </li>
+          </ul>
+        </div>
       </article>
 
       <motion.img
