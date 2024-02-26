@@ -41,29 +41,53 @@ export function Onboarding() {
 
         <div className="mt-5">
           <ul className="flex items-center gap-3">
-            <li className="bg-slate-200 p-2 rounded-xl text-slate-500">
+            <motion.li
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5, delay: 1 / 4 }}
+              className="bg-slate-200 p-2 rounded-xl text-slate-500"
+            >
               <a target="_blank" href="https://instagram.com/galavernag">
                 <InstagramLogo size={26} />
               </a>
-            </li>
-            <li className="bg-slate-200 p-2 rounded-xl text-slate-500">
+            </motion.li>
+            <motion.li
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5, delay: 2 / 4 }}
+              className="bg-slate-200 p-2 rounded-xl text-slate-500"
+            >
               <a target="_blank" href="https://github.com/Guigalaverna">
                 <GithubLogo size={26} />
               </a>
-            </li>
-            <li className="bg-slate-200 p-2 rounded-xl text-slate-500">
+            </motion.li>
+            <motion.li
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5, delay: 3 / 4 }}
+              className="bg-slate-200 p-2 rounded-xl text-slate-500"
+            >
               <a target="_blank" href="https://twitter.com/galavernag">
                 <TwitterLogo size={26} />
               </a>
-            </li>
-            <li className="bg-slate-200 p-2 rounded-xl text-slate-500">
+            </motion.li>
+            <motion.li
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5, delay: 1 }}
+              className="bg-slate-200 p-2 rounded-xl text-slate-500"
+            >
               <a
                 target="_blank"
                 href="https://www.linkedin.com/in/galavernag/#"
               >
                 <LinkedinLogo size={26} />
               </a>
-            </li>
+            </motion.li>
           </ul>
         </div>
       </article>

@@ -4,6 +4,7 @@ import {
   Crimson_Text as FontSerif,
 } from "next/font/google";
 import "./globals.css";
+import { Header } from "@/components/header";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -29,7 +30,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans ${fontSans.variable} ${fontSerif.variable}`}>
-        {children}
+        <main className="px-5 py-12 text-gray-800 md:px-12 xl:px-60 xl:py-16 ">
+          <Header />
+          {children}
+        </main>
       </body>
     </html>
   );
