@@ -16,7 +16,7 @@ export function Techs() {
           {type("my stack")}
         </h3>
         <div className="leading-[1.6] font-light space-y-10 xl:space-y-4">
-          {type(`As a frontend developer, I utilize the entire React ecosystem,
+          {type(`As a frontend developer, I use the React ecosystem,
           including Next.js, TailwindCSS, and TypeScript. Additionally, I am
           proficient in consuming RESTful APIs to integrate dynamic data into my
           applications. Furthermore, I have familiarity with Next.js Server
